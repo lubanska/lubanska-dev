@@ -1,0 +1,15 @@
+:root {
+  @apply bg-ink text-smoke font-content text-8 select-none font-200 tracking-wider;
+}
+
+h1 {
+  @apply font-title text-24 my-6 text-ink;
+
+  // color: white;
+  // -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: white;
+
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
