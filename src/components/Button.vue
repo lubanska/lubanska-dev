@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
-
 interface Props {
   link: string;
   text: string;
@@ -25,13 +23,13 @@ defineProps<Props>();
         </textPath>
       </text>
     </svg>
+    <span class="sr-only">{{ text }}</span>
   </a>
 </template>
 
 <style scoped lang="scss">
 .link {
-  @apply relative w-30 cursor-pointer;
-
+  @apply relative w-30 cursor-pointer rounded-full outline-none focus-visible:outline-offset-12 focus-visible:outline-smoke;
   animation-composition: add;
   animation: spin linear 3 20s, spin linear 3 15s paused;
 
