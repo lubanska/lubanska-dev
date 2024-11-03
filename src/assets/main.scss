@@ -3,7 +3,7 @@
 }
 
 h1 {
-  @apply font-title text-ink shadow-thin lg:shadow-thick;
+  @apply font-title text-ink text-shadow-[-1px_-1px_0_#f1f1f0,1px_-1px_0_#f1f1f0,-1px_1px_0_#f1f1f0,1px_1px_0_#f1f1f0];
 
-  font-size: clamp(2rem, -1.8532rem + 17.6147vw, 14rem);
+  font-size: clamp(2rem, 8.807vw + 0.073rem, 8rem);
 }

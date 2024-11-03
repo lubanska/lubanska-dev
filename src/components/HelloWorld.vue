@@ -1,8 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="m-auto text-center mb-8">
-    <h1 class="mb-8">need a dev?</h1>
+  <div
+    class="w-full flex flex-col items-center justify-center mb-8 text-center">
+    <h1 class="mb-8" set-pointer-state="hover">need a dev?</h1>
     <p>frontend developer with a flair for design</p>
     <p>
       say hi on

@@ -8,7 +8,7 @@ defineProps<Props>();
 </script>
 
 <template>
-  <a :href="link" class="link">
+  <a :href="link" class="link" set-pointer-state="hover">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <path
         id="circlePath"
@@ -30,6 +30,7 @@ defineProps<Props>();
 <style scoped lang="scss">
 .link {
   @apply relative w-30 cursor-pointer rounded-full outline-none focus-visible:outline-offset-12 focus-visible:outline-smoke;
+
   animation-composition: add;
   animation: spin linear 3 20s, spin linear 3 15s paused;
 
@@ -54,6 +55,7 @@ defineProps<Props>();
 
 svg {
   @apply overflow-visible w-full;
+
   transition: all 1s;
 }
 
@@ -63,6 +65,7 @@ path {
 
 text {
   @apply fill-smoke text-2;
+
   transition: all 1s;
 }
 </style>
