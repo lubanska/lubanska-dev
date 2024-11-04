@@ -13,11 +13,11 @@ defineProps<Props>();
       <path
         id="circlePath"
         d="
-      M 10, 50
-      a 40,40 0 1,1 80,0
-      40,40 0 1,1 -80,0
-    " />
-      <text>
+       M 10, 50
+       a 40,40 0 1,1 80,0
+       40,40 0 1,1 -80,0
+       " />
+      <text :textLength="251">
         <textPath href="#circlePath" spacing="auto" :textLength="251">
           <tspan v-for="i in 3" :key="i">{{ text }} •&nbsp</tspan>
         </textPath>
