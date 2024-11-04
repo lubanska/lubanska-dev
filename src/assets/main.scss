@@ -1,0 +1,9 @@
+:root {
+  @apply bg-ink text-smoke font-content text-8 select-none font-200 tracking-wider m-4;
+}
+
+h1 {
+  @apply font-title text-ink text-shadow-[-1px_-1px_0_#f1f1f0,1px_-1px_0_#f1f1f0,-1px_1px_0_#f1f1f0,1px_1px_0_#f1f1f0];
+
+  font-size: clamp(2rem, 8.807vw + 0.073rem, 8rem);
+}
